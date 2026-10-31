@@ -1,48 +1,48 @@
-# Awesome-Cloud-Data-Warehousing-Standard
+# 🚀 Awesome Cloud Data Warehousing Standard
 
-# Awesome-Cloud-Data-Warehousing-Standard
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud Data Warehousing Standard Banner" width="100%" />
+</p>
 
-**Top Cloud Data Warehousing Standard (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Serverless Warehouses, Pay-Per-Query Models, MPP Engines & Self-Hosted Analytical Databases*
+> ⚡ **A curated directory and standard guide for Cloud Data Warehousing, Modern Analytical Databases, Serverless SQL Engines, and High-Performance Open-Source MPP Infrastructure.** 🌟 Star if you find it valuable! 🌟
 
 **Last updated: October 2026**
 
+---
 
+## 📑 Table of Contents
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Data Warehousing – Standard**. These tools enable organizations to analyze data at scale with predictable or consumption-based pricing—from fully managed serverless warehouses that charge only for what you use to open-source MPP engines that give teams complete control over their analytical infrastructure and cost model.
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source Analytical Databases & Query Engines](#-open-source-analytical-databases--query-engines)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#️-disclaimer)
 
+---
 
+## 📊 Sector Overview & Market Dynamics
 
-**Examples** include Snowflake Standard Edition, Amazon Redshift Serverless, Google BigQuery, Azure Synapse Serverless, ClickHouse Cloud, Rockset, Firebolt, SingleStore Helios, and PostgreSQL-based cloud options (the category leaders in commercial space). **Note**: Panoply was referenced in the original request, but current search results identify it as a NASA data visualization tool, not a cloud data warehouse—it has been excluded.
+The global Cloud Data Warehousing market is estimated at approximately **$15.8B – $16.5B in 2026** (scaling rapidly from ~$12.5B in 2025 at a CAGR of ~22–26% toward over $50B+ in the 2030s). The sector exhibits a **moderately concentrated oligopoly at the top**—dominated by the three cloud hyperscalers (Microsoft Azure, Alphabet Google Cloud, and Amazon Web Services) and independent pioneer Snowflake—flanked by a vibrant, **fragmented long-tail** of specialized real-time engines (ClickHouse, SingleStore, Firebolt) and open lakehouse formats (Apache Iceberg, Delta Lake) that prevent a single winner-take-all outcome.
 
+---
 
+## ☁️ SaaS & Hosted Platforms
 
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted analytical databases, MPP engines, and open lakehouse query infrastructure. **Critical note**: The open-source data warehouse landscape is genuinely viable—**Apache Doris** and **StarRocks** offer production-grade MPP with sub-second latency, **ClickHouse** dominates real-time single-table analytics, and **Apache Cloudberry** provides a PostgreSQL-compatible MPP successor to Greenplum. No open-source engine matches Snowflake's fully managed elasticity or BigQuery's serverless simplicity, but for teams willing to operate infrastructure, the analytical engines are competitive at scale.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global Cloud Data Warehousing market is estimated at approximately **$15.8B – $16.5B in 2026** (scaling from ~$12.5B in 2025 at a CAGR of ~22–26% toward over $50B+ in the 2030s). The sector exhibits a **moderately concentrated oligopoly at the top**—dominated by the three hyperscalers (Microsoft, Alphabet/Google, Amazon AWS) and independent powerhouse Snowflake—flanked by a vibrant, **fragmented long-tail** of specialized real-time engines (ClickHouse, SingleStore, Firebolt) and open lakehouse formats (Iceberg, Delta Lake) that prevent a single winner-take-all outcome.
-
-## SaaS/Hosted Platforms
+*Commercial Data Warehouse-as-a-Service (DWaaS) solutions sorted by parent company market capitalization / valuation (descending).*
 
 | Platform | Parent Company / Backing | Valuation / Market Cap | Starting Paid Pricing | Free Tier / Trial Limits | Description & Key Strengths |
 |---|---|---|---|---|---|
@@ -56,108 +56,122 @@ The global Cloud Data Warehousing market is estimated at approximately **$15.8B 
 | **[Timescale Cloud / Managed PostgreSQL](https://www.postgresql.org/)** | TigerData (formerly Timescale) | $1.0B+ Valuation | $30 – $36/month minimum baseline compute ($0.042/hour micro instances) | Free forever plan: 750 MB free storage database (switches to read-only when full); 30-day Performance trial | Managed cloud service extending PostgreSQL with hypertables, automatic columnar compression, continuous aggregates, and tiered object storage. |
 | **[SingleStore Helios](https://www.singlestore.com/cloud-pricing/)** | SingleStore Inc. | ~$1.0B Valuation (~$123M ARR) | $3.96 per credit on-demand (Standard tier 1x multiplier, ~1 credit/hour for small sizes) | Free forever plan: Free Shared Tier / Starter Workspace with 1 GB compressed storage (~4 GB raw data) and 1 attached database | Real-time distributed SQL database combining in-memory OLTP and columnar OLAP (HTAP) for operational analytics and fast transactional ingestion. |
 
-## Open-Source GitHub Projects
+---
 
+## 🔓 Open-Source Analytical Databases & Query Engines
 
+*Top open-source analytical databases, massively parallel processing (MPP) engines, and query federators sorted strictly by GitHub star count (descending).*
 
-- **[Apache Doris](https://github.com/apache/doris)**
+### 1. 🥇 **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** [![Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: C++ | **Architecture**: Columnar OLAP Engine
+* **Overview**: The gold standard for open-source columnar analytics and real-time wide-table aggregations. ClickHouse delivers ultra-fast query performance via vectorized execution and the MergeTree engine family. Ideal for telemetry, log processing, and real-time observability.
+* **Trade-off**: Complex multi-table joins require careful sharding or dictionary optimization; lakehouse catalog integrations are evolving.
 
-  **High-performance, real-time analytical database based on MPP architecture** (Apache 2.0) — **the most balanced open-source MPP engine** for unified real-time and batch analytics, returning sub-second results over massive datasets with 10,000+ QPS concurrency. **Features**: Columnar storage with multiple index types (Sorted Compound Key, Min/Max, BloomFilter, inverted, vector); multiple storage models (Duplicate, Aggregate, Unique with row-level updates); materialized views (single-table and multi-table); MySQL protocol compatibility; hybrid search with vector and full-text indexes. **Architecture**: Integrated storage-compute or decoupled storage-compute (shared S3/HDFS/OSS). **Tech stack**: C++, Java. **Deploy**: Self-hosted. **Trade-off**: Lake integration less mature than StarRocks; not designed for extreme single-table aggregation. **Best for**: enterprise reporting and ad-hoc analytics needing high concurrency and real-time updates—especially MySQL-centric environments.
+### 2. 🥈 **[DuckDB](https://github.com/duckdb/duckdb)** [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+* **License**: MIT | **Primary Language**: C++ | **Architecture**: In-Process Analytical Columnar Database ("SQLite for Analytics")
+* **Overview**: An embedded analytical database engine designed for fast interactive analysis. Executes complex SQL queries directly over Parquet, CSV, Arrow, and Iceberg files without requiring a separate server daemon or network overhead.
+* **Trade-off**: In-process single-node architecture; not built as a multi-node distributed MPP cluster for petabyte multi-tenant warehousing.
 
+### 3. 🥉 **[Apache Doris](https://github.com/apache/doris)** [![Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: C++, Java | **Architecture**: Distributed MPP Analytical Database
+* **Overview**: A high-performance, real-time analytical database supporting both storage-compute coupled and decoupled architectures (shared S3/HDFS). Excels in sub-second reporting, interactive dashboards, and high-concurrency point queries with row-level updates.
+* **Trade-off**: Lakehouse query acceleration is strong but historically younger than dedicated query engines.
 
+### 4. ⚡ **[Apache Druid](https://github.com/apache/druid)** [![Stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Java | **Architecture**: Real-Time Distributed Event Store & OLAP Engine
+* **Overview**: Optimized for streaming data ingestion from Kafka and Amazon Kinesis. Provides sub-second query latencies over billions of rows using columnar storage, bitmap indexes, and automatic pre-aggregation rollups for interactive dashboards.
+* **Trade-off**: Tailored specifically for append-heavy event data and time-series analytics; less suited for complex multi-way ad-hoc joins.
 
-- **[StarRocks](https://github.com/StarRocks/starrocks)**
+### 5. 🚀 **[Trino](https://github.com/trinodb/trino)** [![Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Java | **Architecture**: Distributed SQL Query Engine for Federation & Lakehouses
+* **Overview**: The premier distributed query engine (formerly PrestoSQL) designed to run interactive analytic queries against data lakes (Iceberg, Delta Lake, Hudi), object storage (S3, GCS, ADLS), relational stores, and NoSQL systems from a single SQL dialect.
+* **Trade-off**: Pure execution engine with no built-in storage or persistence layer; requires external storage and catalogs.
 
-  **Next-generation MPP database for all-scenario analytics** (Apache 2.0, Linux Foundation) — **the most performance-optimized open-source MPP engine for multi-table joins and lakehouse queries**, with a fully vectorized engine and new CBO optimizer. **Features**: Multi-Catalog reads Iceberg/Hudi/Delta/Paimon directly; asynchronous incremental materialized views; Primary Key model for real-time updates; MySQL protocol. **Performance**: Reported **3x–5x faster than Trino** on TPC-H benchmarks. **Architecture**: Shared-nothing or shared-data. **Tech stack**: C++, Java. **Deploy**: Self-hosted. **Trade-off**: Acceleration layer, not source of truth; steeper learning curve than ClickHouse. **Best for**: teams with lakehouse architecture needing sub-second BI performance and high concurrency on Iceberg/Hudi/Delta data.
+### 6. ⭐ **[StarRocks](https://github.com/StarRocks/starrocks)** [![Stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: C++, Java | **Architecture**: Next-Generation Vectorized MPP Database
+* **Overview**: High-speed analytical engine engineered specifically for multi-table joins, asynchronous materialized views, and direct lakehouse queries over Iceberg and Delta Lake. Features a cost-based optimizer (CBO) delivering industry-leading TPC-H benchmarks.
+* **Trade-off**: Operates primarily as an acceleration layer; steeper operational learning curve than lightweight embedded tools.
 
+### 7. 🦀 **[Apache DataFusion](https://github.com/apache/datafusion)** [![Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Rust | **Architecture**: Extensible Vectorized SQL Query Engine
+* **Overview**: A lightning-fast, modular query engine library written in Rust and powered by Apache Arrow memory format. Powers modern analytical tools, custom data warehouse engines, and distributed compute frameworks.
+* **Trade-off**: Library / SDK framework for building data systems rather than a standalone turnkey database server.
 
+### 8. ❄️ **[Databend](https://github.com/datafuselabs/databend)** [![Stars](https://img.shields.io/github/stars/datafuselabs/databend?style=social&color=white)](https://github.com/datafuselabs/databend/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Rust | **Architecture**: Modern Cloud-Native Elastic Warehouse (Open-Source Snowflake Alternative)
+* **Overview**: An open-source, cloud-native warehouse written in Rust designed entirely for object storage (S3, Azure Blob, GCS, MinIO). Decouples compute and storage completely to deliver elastic autoscaling and Git-like data versioning.
+* **Trade-off**: Younger ecosystem compared to seasoned distributed engines like ClickHouse or Trino.
 
-- **[ClickHouse](https://github.com/ClickHouse/ClickHouse)**
+### 9. 🧊 **[Apache Iceberg](https://github.com/apache/iceberg)** [![Stars](https://img.shields.io/github/stars/apache/iceberg?style=social&color=white)](https://github.com/apache/iceberg/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Java, Python, Rust | **Architecture**: Open Lakehouse Table Format
+* **Overview**: The industry standard open table format for huge analytic datasets. Brings full ACID transactions, partition evolution, schema evolution, and time-travel snapshots to files stored in cloud object storage, interoperable across Snowflake, BigQuery, StarRocks, and Trino.
+* **Trade-off**: Table format specification; requires a compute query engine and a catalog (such as Apache Polaris or Nessie) to operate.
 
-  **Column-oriented database for real-time analytics** (Apache 2.0) — **the fastest open-source engine for single-table aggregation and log analytics**. **Features**: MergeTree engine family with rich indexing and partitioning; vectorized execution; excellent for logs, time-series, and wide-table aggregations. **Tech stack**: C++. **Deploy**: Self-hosted or ClickHouse Cloud. **Trade-off**: Weak JOIN performance; not suitable for high-frequency updates; lake integration weaker than StarRocks/Doris. **Best for**: log analysis, user behavior analytics, and read-heavy single-table aggregation.
+### 10. 🎯 **[Apache Pinot](https://github.com/apache/pinot)** [![Stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Java | **Architecture**: Real-Time Distributed OLAP Datastore
+* **Overview**: Powers high-concurrency, user-facing analytics at LinkedIn, Uber, and Stripe. Engineered to ingest streaming data with immediate freshness and execute low-latency analytical queries with upsert support.
+* **Trade-off**: Operational complexity involving multiple cluster roles (brokers, controllers, servers, and ZooKeeper coordination).
 
+### 11. 🛡️ **[YDB](https://github.com/ydb-platform/ydb)** [![Stars](https://img.shields.io/github/stars/ydb-platform/ydb?style=social&color=white)](https://github.com/ydb-platform/ydb/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: C++ | **Architecture**: Distributed SQL Database with Analytical Columnar Engine
+* **Overview**: An open-source distributed SQL database that combines strong transactional consistency with native columnar tables for blended operational and analytical (HTAP) workloads across multi-datacenter clusters.
+* **Trade-off**: Hybrid focus balances transactional and analytical capabilities rather than exclusively targeting pure MPP petabyte aggregation.
 
+### 12. 📊 **[Apache Kylin](https://github.com/apache/kylin)** [![Stars](https://img.shields.io/github/stars/apache/kylin?style=social&color=white)](https://github.com/apache/kylin/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: Java | **Architecture**: Distributed Multidimensional Analytical OLAP Engine
+* **Overview**: Designed to provide SQL interface and multi-dimensional analysis (MOLAP) on Hadoop and cloud data lakes. Employs pre-computation techniques (Cube building) to achieve sub-second response times on massive datasets.
+* **Trade-off**: Pre-computation requires heavy initial processing and maintenance when upstream schemas or dimensions mutate.
 
-- **[Apache Cloudberry (Incubating)](https://github.com/apache/cloudberry)**
-
-  **Open-source MPP database for large-scale analytics and AI** (Apache 2.0) — **the successor to Greenplum**, derived from the last open-source version and now under Apache governance. **Features**: PostgreSQL 14 foundation with distributed query planning; **PAX storage format** (hybrid row/column); **dynamic tables** for automatic scheduled refresh; ORCA optimizer improvements; MCP server for AI workflow integration. **Tech stack**: C, PostgreSQL 14. **Deploy**: Self-hosted. **Trade-off**: Incubating project—still maturing; PostgreSQL kernel upgrade in progress. **Best for**: organizations migrating from Greenplum or needing PostgreSQL-compatible MPP with active open-source development.
-
-
-
-- **[Apache Druid](https://github.com/apache/druid)**
-
-  **Real-time analytics database** (Apache 2.0) — **the open-source engine for interactive dashboards on streaming data**. **Features**: Time-series optimized columnar storage; real-time ingestion from Kafka/Kinesis; sub-second queries on billions of rows; built-in rollup for pre-aggregation. **Tech stack**: Java. **Deploy**: Self-hosted or Imply Cloud. **Trade-off**: Not a general-purpose warehouse—best for time-series and event data with known query patterns. **Best for**: operational dashboards and real-time analytics on streaming event data.
-
-
-
-- **[Apache Pinot](https://github.com/apache/pinot)**
-
-  **Real-time distributed OLAP datastore** (Apache 2.0) — **the engine powering user-facing analytics at LinkedIn, Uber, and Stripe**. **Features**: Columnar storage with inverted indexes; real-time ingestion from Kafka; sub-second queries at high concurrency; upsert support for mutable data. **Tech stack**: Java. **Deploy**: Self-hosted or StarTree Cloud. **Trade-off**: Operational complexity—requires ZooKeeper, controller, broker, and server components. **Best for**: user-facing analytics products needing millisecond query latency at scale.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Trino** — Distributed SQL query engine for federated analytics (Apache 2.0). Queries HDFS, Hive, Kafka, MySQL, PostgreSQL, Iceberg, Delta, and more; no storage of its own. **Note**: Query engine only—no storage or materialized views. **Best for**: organizations with data scattered across systems needing a unified SQL interface.
-
-- **Apache Iceberg** — Open table format (Apache 2.0). The de facto standard for open lakehouse storage; enables multiple engines to query the same tables. **Note**: Table format only—needs catalog (Polaris/Nessie) and storage (S3/MinIO). **Best for**: building vendor-neutral lakehouse architecture.
-
-- **Greenplum** — Mature PostgreSQL-based MPP (Apache 2.0). Proven at petabyte scale but aging; **Apache Cloudberry** is the active successor. **Note**: For new deployments, evaluate Cloudberry. **Best for**: organizations with existing Greenplum investment.
-
-
-
-**Frameworks for building custom systems**: Combine **MinIO** or S3 for storage with **Apache Iceberg** as the table format, **StarRocks** or **Apache Doris** as the query engine, and **ClickHouse** or **Druid** for real-time analytics—creating an open-source data warehouse stack. **None of these match Snowflake's managed elasticity or BigQuery's serverless simplicity**, but for teams prioritizing cost control and vendor independence, the open engines are production-viable at scale.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cloud data warehousing platforms handling enterprise data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls, encryption, and audit logging.
-
-- **The "standard edition" vs. "serverless" vs. "self-hosted MPP" distinction is critical.** **Snowflake Standard** is the entry-level edition of a multi-cluster shared-data platform—core features but no multi-cluster compute or extended governance . **Redshift Serverless** and **BigQuery** are **serverless**—no infrastructure to manage; pay per use . **Azure Synapse Serverless** is a **query service over the lake**—not a full warehouse; no DML . **ClickHouse Cloud, Rockset, Firebolt, and SingleStore Helios** are **managed analytical databases**—consumption or credit-based. **Apache Doris, StarRocks, ClickHouse, and Cloudberry** are **self-hosted MPP engines**—you own operations. **Choose based on whether you need managed convenience, serverless elasticity, or full control.**
-
-- **BigQuery Standard Edition is limited.** It lacks BI Engine acceleration, cross-user caching, advanced workload management, and managed disaster recovery—features that production BI workloads typically require . **Do not assume Standard Edition is sufficient for dashboard-heavy use cases**; validate against Enterprise-tier requirements.
-
-- **Azure Synapse Serverless is not a full data warehouse.** It supports SELECT queries over lake files but **does not support DML** (INSERT/UPDATE/DELETE) . **It is a query service for exploration and logical data warehousing**, not a replacement for a provisioned warehouse when you need to transform and persist data.
-
-- **Rockset's compute-compute separation is a genuine differentiator**—decoupling indexing from query compute lets different clusters share the same real-time data without interference . **Firebolt Core** offers a free self-managed path for teams wanting Firebolt's engine without cloud commitment .
-
-- **Apache Doris and StarRocks are the strongest open-source MPP choices.** Doris offers balanced real-time and batch analytics with both integrated and decoupled architectures. StarRocks is the performance leader for multi-table joins and lakehouse queries, reporting 3x–5x faster than Trino on TPC-H . **Choose Doris for balanced workloads; choose StarRocks for join-heavy and lakehouse scenarios.**
-
-- **Pricing opacity varies.** Snowflake publishes $2.00/credit for Standard . Redshift Serverless is RPU-based with reservation discounts . BigQuery has on-demand and Editions pricing . Synapse Serverless is per-TB-processed . ClickHouse Cloud and Firebolt publish consumption-based pricing . SingleStore publishes credit rates . **Validate with direct vendor conversations against your actual query volume and concurrency requirements.**
-
-- Self-hosted open-source solutions require proper infrastructure (compute clusters, object storage, catalog services), security hardening, and ongoing maintenance. **Data warehouse engines are business-critical**—ensure your deployment meets your organization's reliability and security requirements before migrating production analytical workloads.
-
-
+### 13. 🍓 **[Apache Cloudberry (Incubating)](https://github.com/apache/cloudberry)** [![Stars](https://img.shields.io/github/stars/apache/cloudberry?style=social&color=white)](https://github.com/apache/cloudberry/stargazers)
+* **License**: Apache-2.0 | **Primary Language**: C | **Architecture**: PostgreSQL 14-Compatible Distributed MPP Database
+* **Overview**: The official open-source successor to Greenplum, developed under Apache Software Foundation governance. Combines PostgreSQL 14 compatibility, PAX hybrid row/column storage format, ORCA query optimization, and dynamic tables for large-scale enterprise analytics.
+* **Trade-off**: Incubating project actively modernizing PostgreSQL core; best suited for teams upgrading legacy Greenplum clusters or desiring pure Postgres MPP semantics.
 
 ---
 
+## 📈 Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Data-Warehousing-Standard&type=date&legend=top-left)
 
-**Made for data engineers, analytics teams, and organizations building transparent cloud data warehousing solutions.**
+---
 
-Let's make Cloud Data Warehousing Standard more open, data-driven, and cost-transparent.
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! Help keep this standard repository comprehensive, factual, and up to date:
+
+1. 🍴 **Fork the repo** to your GitHub account.
+2. 🌿 **Create a feature branch** (`git checkout -b add-warehouse-option`).
+3. 📝 **Add or update entries** in `README.md` keeping descriptions factual, concise, and linked to official repositories or pricing pages.
+4. 🧪 **Verify link integrity and markdown tables**.
+5. 🚀 **Submit a Pull Request** with a brief summary of the addition or revision.
+
+---
+
+## 💖 Support & Sponsorship
+
+If this curated guide has saved you time, informed your architecture, or helped optimize your cloud analytical infrastructure costs, please consider supporting the project:
+
+- 🌟 **Star this repository** to improve discoverability.
+- 🍴 **Fork and share** with data engineering and analytics colleagues.
+- ☕ **Buy a coffee & sponsor ongoing research** on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this benchmark directory open, objective, and continuously refreshed!
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a **community-curated guide** intended for architectural evaluation and educational reference—not an exclusive endorsement.
+- Cloud data warehousing platforms handling sensitive customer data must comply with relevant data governance frameworks (GDPR, HIPAA, SOC 2, CCPA) and enforce rigorous encryption at rest and in transit.
+- **Architecture Distinctions**:
+  - **Serverless DW** (BigQuery, Redshift Serverless) eliminates cluster sizing with true auto-pause and consumption billing.
+  - **Lakehouse Query Services** (Azure Synapse Serverless SQL, Trino) query object storage directly without maintaining separate persistent compute clusters.
+  - **Managed Analytical Cloud Engines** (Snowflake, ClickHouse Cloud, Firebolt, SingleStore Helios) combine elasticity with decoupled storage-compute architecture.
+  - **Open-Source MPP Databases** (Apache Doris, StarRocks, ClickHouse, Databend, Cloudberry) provide zero licensing fees and total infrastructure control at scale.
+- **Pricing & Quota Verification**: Published cloud rates and credit conversions change periodically across regions. Always cross-reference active consumption projections against direct vendor quotes and benchmark queries against representative workloads.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for data engineers, analytics leads, and infrastructure architects building modern, transparent cloud analytics platforms.</b>
+</p>

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing Orbs Filters -->
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70" result="blur" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1" fill="#64748b" fill-opacity="0.4" />
+    </pattern>
+
+    <style>
+      .glow-orb-1 {
+        animation: float1 10s ease-in-out infinite alternate;
+      }
+      .glow-orb-2 {
+        animation: float2 12s ease-in-out infinite alternate;
+      }
+      .data-pulse {
+        animation: pulseLine 4s linear infinite;
+      }
+      .wave-path {
+        animation: waveShift 8s ease-in-out infinite alternate;
+      }
+      .orbit-node {
+        animation: rotateNode 15s linear infinite;
+        transform-origin: 980px 210px;
+      }
+      @keyframes float1 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        100% { transform: translate(60px, 40px) scale(1.15); }
+      }
+      @keyframes float2 {
+        0% { transform: translate(0px, 0px) scale(1.1); }
+        100% { transform: translate(-50px, -30px) scale(0.9); }
+      }
+      @keyframes pulseLine {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes waveShift {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(12px); }
+      }
+      @keyframes rotateNode {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glows (Behind all content) -->
+  <g opacity="0.35">
+    <circle class="glow-orb-1" cx="200" cy="120" r="140" fill="#38bdf8" filter="url(#glowCyan)" />
+    <circle class="glow-orb-2" cx="1020" cy="240" r="160" fill="#818cf8" filter="url(#glowPurple)" />
+    <circle class="glow-orb-1" cx="620" cy="380" r="120" fill="#c084fc" filter="url(#glowPurple)" />
+  </g>
+
+  <!-- High-Tech Coordinate Grid -->
+  <rect width="1200" height="420" fill="url(#gridPattern)" />
+
+  <!-- Dynamic Data Flow Wave Background Lines -->
+  <g opacity="0.25">
+    <path class="wave-path" d="M-50,300 C 200,240 450,340 750,280 C 1000,220 1150,310 1250,260" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" />
+    <path class="wave-path" d="M-50,340 C 250,270 500,380 800,310 C 1050,250 1180,330 1250,290" fill="none" stroke="#818cf8" stroke-width="1.5" />
+    <path class="wave-path" d="M-50,260 C 180,310 400,220 700,270 C 950,310 1100,230 1250,240" fill="none" stroke="#c084fc" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Abstract Right-Side Tech Isometric Diagram Graphic -->
+  <g transform="translate(860, 90)">
+    <!-- Central Hex Base -->
+    <polygon points="120,40 200,85 200,175 120,220 40,175 40,85" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" />
+    <!-- Center Warehouse Cylinder Core -->
+    <ellipse cx="120" cy="115" rx="45" ry="18" fill="#1e293b" stroke="#818cf8" stroke-width="2" />
+    <path d="M75,115 L75,145 C75,155 165,155 165,145 L165,115" fill="#1e293b" stroke="#818cf8" stroke-width="2" opacity="0.9" />
+    <path d="M75,130 C75,140 165,140 165,130" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="120" cy="115" rx="30" ry="12" fill="#0369a1" opacity="0.7" />
+
+    <!-- Pulsing Radial Streams -->
+    <line x1="120" y1="40" x2="120" y2="10" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="120" cy="10" r="5" fill="#38bdf8" />
+    
+    <line x1="200" y1="130" x2="235" y2="130" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="235" cy="130" r="5" fill="#818cf8" />
+
+    <line x1="40" y1="130" x2="5" y2="130" stroke="#c084fc" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="5" cy="130" r="5" fill="#c084fc" />
+
+    <line x1="120" y1="220" x2="120" y2="245" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="120" cy="245" r="5" fill="#38bdf8" />
+
+    <!-- Sub-node Badges Floating -->
+    <rect x="180" y="25" width="60" height="24" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="210" y="41" fill="#38bdf8" font-size="10" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="bold" text-anchor="middle">OLAP</text>
+
+    <rect x="0" y="25" width="60" height="24" rx="12" fill="#0f172a" stroke="#c084fc" stroke-width="1" />
+    <text x="30" y="41" fill="#c084fc" font-size="10" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="bold" text-anchor="middle">MPP</text>
+
+    <rect x="90" y="240" width="60" height="24" rx="12" fill="#0f172a" stroke="#818cf8" stroke-width="1" />
+    <text x="120" y="256" fill="#818cf8" font-size="10" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="bold" text-anchor="middle">LAKE</text>
+  </g>
+
+  <!-- Foreground Main Title & Content (Crisp, High Contrast, Prominent) -->
+  <g transform="translate(80, 80)">
+    <!-- Curated Category Badge -->
+    <rect x="0" y="0" width="280" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <circle cx="16" cy="16" r="6" fill="#10b981" />
+    <text x="32" y="21" fill="#94a3b8" font-size="12" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="600" letter-spacing="1">CURATED DATA ARCHITECTURE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="95" fill="#f8fafc" font-size="44" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="800" letter-spacing="-0.5">
+      Awesome Cloud Data Warehousing
+    </text>
+    
+    <!-- Title Accent Bar -->
+    <rect x="0" y="112" width="580" height="4" rx="2" fill="url(#primaryGrad)" />
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="148" fill="#94a3b8" font-size="19" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="400">
+      The authoritative index of SaaS &amp; Open-Source Cloud Analytical Warehouses
+    </text>
+
+    <!-- Pills Container -->
+    <g transform="translate(0, 185)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="135" height="36" rx="18" fill="#1e293b" stroke="#0284c7" stroke-width="1" />
+      <text x="67" y="23" fill="#38bdf8" font-size="13" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="600" text-anchor="middle">⚡ Serverless OLAP</text>
+
+      <!-- Pill 2 -->
+      <rect x="145" y="0" width="145" height="36" rx="18" fill="#1e293b" stroke="#6366f1" stroke-width="1" />
+      <text x="217" y="23" fill="#818cf8" font-size="13" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="600" text-anchor="middle">🚀 MPP Query Engines</text>
+
+      <!-- Pill 3 -->
+      <rect x="300" y="0" width="140" height="36" rx="18" fill="#1e293b" stroke="#9333ea" stroke-width="1" />
+      <text x="370" y="23" fill="#c084fc" font-size="13" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="600" text-anchor="middle">🌊 Open Lakehouse</text>
+
+      <!-- Pill 4 -->
+      <rect x="450" y="0" width="130" height="36" rx="18" fill="#1e293b" stroke="#059669" stroke-width="1" />
+      <text x="515" y="23" fill="#34d399" font-size="13" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="600" text-anchor="middle">💰 Cost Transparency</text>
+    </g>
+
+    <!-- Meta note -->
+    <text x="0" y="255" fill="#64748b" font-size="12" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-weight="500">
+      ★ Benchmarks • Pricing Guides • Free Tier Quotas • Architecture Comparisons • 2026 Edition
+    </text>
+  </g>
+
+  <!-- Polished Border Frame -->
+  <rect x="1" y="1" width="1198" height="418" rx="12" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
+</svg>
