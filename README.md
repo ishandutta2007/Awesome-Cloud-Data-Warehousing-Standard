@@ -32,73 +32,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Cloud Data Warehousing market is estimated at approximately **$15.8B – $16.5B in 2026** (scaling from ~$12.5B in 2025 at a CAGR of ~22–26% toward over $50B+ in the 2030s). The sector exhibits a **moderately concentrated oligopoly at the top**—dominated by the three hyperscalers (Microsoft, Alphabet/Google, Amazon AWS) and independent powerhouse Snowflake—flanked by a vibrant, **fragmented long-tail** of specialized real-time engines (ClickHouse, SingleStore, Firebolt) and open lakehouse formats (Iceberg, Delta Lake) that prevent a single winner-take-all outcome.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snowflake Standard Edition](https://www.snowflake.com/pricing-options/)**
-
-  **Entry-level edition of Snowflake's multi-cluster, shared-data architecture**. Standard includes all core platform features—fully managed elastic compute, automatic encryption, Snowpark, data sharing, and Time Travel—at **$2.00 per credit** (AWS US East) . Storage and compute are billed separately; virtual warehouses are independent compute clusters that share no resources. **Pricing**: Consumption-based (credits). **Free tier**: Trial credits. **Best for**: teams wanting Snowflake's core platform without Enterprise-tier features like multi-cluster warehouses or extended Time Travel—**trade-off**: no multi-cluster compute, granular governance, or extended retention.
-
-
-
-- **[Amazon Redshift Serverless](https://aws.amazon.com/redshift/)**
-
-  **Serverless version of Redshift** that automatically provisions and scales capacity for unpredictable workloads. **No charges when idle**—you pay only for resources consumed . Supports the same SQL tools and BI applications as provisioned Redshift. **Pricing**: RPU-hour based; **Serverless Reservations** offer up to **20–24% discount** for committed RPU capacity . **Free tier**: AWS Free Tier applies. **Best for**: AWS-centric teams wanting Redshift performance without cluster management—**trade-off**: less control over instance sizing compared to provisioned RA3.
-
-
-
-- **[Google BigQuery](https://cloud.google.com/bigquery)**
-
-  **Fully serverless, petabyte-scale analytics warehouse** with no infrastructure to manage . **On-demand pricing** charges per TiB processed (with free tier); **Editions** (Standard, Enterprise, Enterprise Plus) offer slot-based capacity reservations with autoscaling . **Standard Edition** includes autoscaling compute, but **lacks BI Engine acceleration, advanced workload management, and cross-user caching**—features reserved for Enterprise tiers . **Pricing**: On-demand or Editions (slot-hours). **Free tier**: 1 TB queries/month and 10 GB storage. **Best for**: teams wanting zero operational overhead with spiky workloads—**trade-off**: Standard Edition is limited; production BI typically requires Enterprise.
-
-
-
-- **[Azure Synapse Serverless SQL Pool](https://azure.microsoft.com/en-us/products/synapse-analytics)**
-
-  **Query service over data lake** (Parquet, Delta Lake, CSV) using familiar T-SQL—**no infrastructure to provision or clusters to maintain** . True **pay-per-use**: charged only for data processed by queries, with a **10 MB minimum per query** and rounding to the nearest 1 MB . **No charge for reserved resources**. **Pricing**: Per TB processed (~¥36.4/TB in some regions); 10 TB free queries/month historically . **Free tier**: Limited free query allowance. **Best for**: teams wanting ad-hoc lake exploration without provisioning—**trade-off**: **DML not supported**; best for querying, not building a full warehouse .
-
-
-
-- **[ClickHouse Cloud](https://clickhouse.com/cloud)**
-
-  **Fully managed version of the open-source ClickHouse** columnar OLAP database. Adds **ClickPipes** for managed ingestion, **SQL console** with GenAI assistance, compute-compute separation, enterprise security (SSO, RBAC, CMEK), and compliance certifications (SOC2, HIPAA, PCI DSS, ISO 27001) not available in open source . **Pricing**: Consumption-based; **$300 free trial credits** for 30 days . **Free tier**: Trial credits. **Best for**: teams wanting ClickHouse's real-time analytics performance without managing clusters—especially for log analytics and event data.
-
-
-
-- **[Rockset](https://rockset.com/)**
-
-  **Real-time analytics database** with **compute-compute separation** (decouple indexing from query compute) and **hybrid search** combining vector, text, time-series, and geospatial data . Claims **30% reduction in compute costs** with new general-purpose instances; entry as low as **$232/month** . Customers include JetBlue, Meta, and Windward. **Pricing**: Consumption-based; instance-class dependent. **Free tier**: Trial available. **Best for**: real-time AI applications, customer-facing analytics, and search use cases needing low-latency indexing.
-
-
-
-- **[Firebolt](https://www.firebolt.io/)**
-
-  **Single-binary query engine** that runs identically from laptop to 100-node cluster. **Standard**, Enterprise, and Dedicated fully-managed plans available via AWS Marketplace; **Firebolt Core** is a free self-managed edition for on-premises or local deployment . Storage in object storage; compute decoupled. **Pricing**: Consumption-based; Core is free forever. **Free tier**: Firebolt Core (self-managed). **Best for**: teams wanting sub-second analytics with deployment flexibility—including self-hosted via Core.
-
-
-
-- **[SingleStore Helios](https://www.singlestore.com/cloud-pricing/)**
-
-  **Real-time distributed SQL database** for operational analytics. Helios is the fully managed cloud deployment with **credit-based pricing** ($3.96/credit on-demand); compute credits consumed at **1x for Standard, 1.5x for Enterprise** . Managed, Dedicated, and BYOC regions available with tiered multipliers. **Pricing**: Credits per hour based on deployment size. **Free tier**: Free Starter Workspace. **Best for**: workloads needing sub-second analytics on fresh operational data with unified transactions and analytics.
-
-
-
-- **[PostgreSQL Cloud (Managed Options)](https://www.postgresql.org/)**
-
-  **Managed PostgreSQL services** (Timescale Cloud, Amazon RDS, Azure Database, Google Cloud SQL) extend PostgreSQL for analytical workloads. **Timescale Cloud** adds **hypertables, continuous aggregates, columnar storage, and tiered S3/Azure Blob storage** for real-time analytics on time-series data . **Pricing**: Varies by provider; Timescale offers free and standard services. **Free tier**: Yes, limited on most providers. **Best for**: teams wanting PostgreSQL compatibility with analytical extensions—**trade-off**: not a true MPP warehouse; performance depends on workload shape.
-
-
+| Platform | Parent Company / Backing | Valuation / Market Cap | Starting Paid Pricing | Free Tier / Trial Limits | Description & Key Strengths |
+|---|---|---|---|---|---|
+| **[Azure Synapse Serverless SQL](https://azure.microsoft.com/en-us/products/synapse-analytics)** | Microsoft | ~$3.9T Market Cap (FY26 revenue ~$245B+) | $5.00 per TB scanned (pay-per-query, 10 MB minimum per query) | Free trial only: 30 days with $200 Azure credits; no permanent free tier | On-demand lakehouse query service executing T-SQL across ADLS Gen2/Blob storage; zero compute provisioning with automatic scaling. |
+| **[Google BigQuery](https://cloud.google.com/bigquery)** | Alphabet (Google) | ~$3.5T – $3.9T Market Cap (FY25 revenue ~$350B+) | $6.25 per TiB scanned (On-Demand) or $0.04 per slot-hour (Standard Edition capacity) | Free forever: 1 TiB queries/mo and 10 GB active storage; new users get 90-day $300 GCP credit | Fully serverless multi-cloud analytical warehouse; decouples compute and storage with built-in ML and seamless Google ecosystem integration. |
+| **[Amazon Redshift Serverless](https://aws.amazon.com/redshift/)** | Amazon (AWS) | ~$2.6T – $2.7T Market Cap (FY25 revenue ~$638B+) | $0.375 per RPU-hour (billed per second, 60s minimum; base capacity starts at 4 RPUs) | Free trial: $300 trial credit for 90 days for new Serverless accounts; no permanent serverless free tier | Serverless edition of AWS Redshift automatically scaling data warehouse capacity with zero idle charges and native AWS lake integrations. |
+| **[Rockset](https://rockset.com/)** | OpenAI | ~$852B Valuation ($13B+ ARR) | $0.32/compute-unit-hour (~$232/month entry baseline) | Free trial only: 14-day free trial with full feature access and cloud connectors; no permanent free tier | Real-time search and analytics database with compute-compute separation and vector/hybrid indexing; acquired by OpenAI to power real-time AI workloads. |
+| **[Snowflake Standard Edition](https://www.snowflake.com/pricing-options/)** | Snowflake Inc. | ~$107B – $110B Market Cap (FY26 revenue ~$3.6B+) | $2.00 per credit (AWS US East; virtual warehouse compute billed per second, 60s minimum) | Free trial only: 30-day free trial with $400 usage credits; no permanent free tier | Multi-cluster shared-data analytical warehouse separating storage and compute with instant auto-resume, Snowpark, and native data sharing. |
+| **[ClickHouse Cloud](https://clickhouse.com/cloud)** | ClickHouse Inc. | $15B Valuation ($250M+ ARR) | $0.2181 per compute-unit-hour (Basic Tier, AWS us-east-1) + $25.30/TB compressed storage/mo | Free trial only: 30-day free trial with $300 credits; no permanent managed free tier (engine is open source) | Fully managed columnar OLAP platform offering sub-second queries on wide tables, ClickPipes managed ingestion, and compute separation. |
+| **[Firebolt](https://www.firebolt.io/)** | Firebolt Inc. | $1.4B Valuation (~$40M ARR) | $0.92 – $1.00 per engine node/hour (compute billed per second) + $27/TB compressed storage/mo | Free forever plan: Firebolt Core is free forever for self-managed deployments; Cloud offers 14-day / $200 trial credit | Decoupled cloud data warehouse engineered for sub-second, low-latency aggregations and user-facing dashboards at high concurrency. |
+| **[Timescale Cloud / Managed PostgreSQL](https://www.postgresql.org/)** | TigerData (formerly Timescale) | $1.0B+ Valuation | $30 – $36/month minimum baseline compute ($0.042/hour micro instances) | Free forever plan: 750 MB free storage database (switches to read-only when full); 30-day Performance trial | Managed cloud service extending PostgreSQL with hypertables, automatic columnar compression, continuous aggregates, and tiered object storage. |
+| **[SingleStore Helios](https://www.singlestore.com/cloud-pricing/)** | SingleStore Inc. | ~$1.0B Valuation (~$123M ARR) | $3.96 per credit on-demand (Standard tier 1x multiplier, ~1 credit/hour for small sizes) | Free forever plan: Free Shared Tier / Starter Workspace with 1 GB compressed storage (~4 GB raw data) and 1 attached database | Real-time distributed SQL database combining in-memory OLTP and columnar OLAP (HTAP) for operational analytics and fast transactional ingestion. |
 
 ## Open-Source GitHub Projects
 
